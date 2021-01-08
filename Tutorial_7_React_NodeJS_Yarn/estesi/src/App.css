@@ -1,0 +1,278 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    color: rgba(0, 0, 0, 1);
+    /*background-image: linear-gradient( 118.4deg,  rgba(122,35,52,1) 27.5%, rgba(62,9,27,1) 92.7% );*/
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2 {
+    position: absolute;
+    top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sacudon de mano zorron */
+.title span {
+    font-size: 100px;
+    
+    animation: emoji-shake .5s infinite;
+}
+
+@keyframes emoji-shake {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.worlds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.worlds li {
+    position: absolute;
+    display: list-item;
+    list-style: none;
+    float: left;
+    bottom: -150px;
+
+    animation: worlds-flow 7s ease-in-out infinite;
+}
+
+.worlds li:nth-child(1) {
+    left: 56%;
+    font-size: 120px;
+
+    animation-delay: 7s;
+    animation-duration: 4s;
+}
+.worlds li:nth-child(2) {
+    left: 22%;
+    font-size: 70px;
+
+    animation-delay: 5s;
+    animation-duration: 4s;
+}
+.worlds li:nth-child(3) {
+    left: 77%;
+    font-size: 50px;
+    
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+.worlds li:nth-child(4) {
+    left: 8%;
+    font-size: 40px;
+    
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+.worlds li:nth-child(5) {
+    left: 30%;
+    font-size: 20px;
+    
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+/*ANIMACION EN CSS*/
+@keyframes worlds-flow {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(-100px);
+        transform: translateX(-150px);
+        opacity: 0.3;
+    }
+    60% {
+        transform: translateY(-170px);
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-800px);
+        opacity: 1;
+    }
+}
+
+/* Rotation of the wheels */
+@keyframes wheelanimation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* MOVEMOS EL AUTO */
+@keyframes caranimation{
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(500px);
+    }
+    50% {
+        transform: translateX(1000px);
+    }
+    75%{
+        transform: translateX(1500px);
+    }
+    100% {
+        transform: translateX(2000px);
+    }
+}
+.wheel1 {
+    background-image: url(./public/wheel1-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 49px;
+    /*bottom: 71px;
+    left: 570px;*/
+    bottom: -1px;
+    left: 173px;
+}
+.wheel2 {
+    background-image: url(./public/wheel2-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 44px;
+    /*bottom: 77px;
+    left: 433px;*/
+    bottom: 3px;
+    left: 36.5px;
+}
+/* Wheel's Styling and positioning */
+.wheel {
+    position: absolute;
+    animation: wheelanimation linear .6s infinite;
+}
+
+.caar {
+    position: absolute;
+    animation: caranimation linear 5s infinite;
+}
+
+.movingcar {
+    width: 18rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 77px;
+    left: 30px;
+}
+.car {
+    background-image: url(./public/car-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 4.699rem;
+    position: absolute;
+    /*bottom: 77px;
+    left: 396px;*/
+}
+
+/* Sky Styling */
+.sky {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./public/sky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.track {
+    background-image: url(./public/track.jpeg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 20vh;
+}
+
+/* Tree Styling and positioning */
+.tree {
+    height: 100vh;
+    background-image: url(./public/vegetacion.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.texto1{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font: normal 16px/1 "carter-one", Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  .texto2{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font: normal 16px/1 "carter-one", Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  
+  .texto3{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    font: normal 16px/1 "carter-one", Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: -2px 0 rgb(255, 255, 255), 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+  }
