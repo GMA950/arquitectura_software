@@ -30,3 +30,5 @@ Correr programas:
 - Se pueden crear facilemente librerias escritas en C para Lua.
 - Lua al ser un lenguaje dinamico posee recoleccion de basura (garbage collection) lo cual le quita trabajo extra al desarrollador
 - Lua es un lenguaje bastante seguro, si hay algo mal o algo falla te lo hará saber inmediatamente, aparte de que se puede implementar un manejador de errores mucho mas facil que en C/C++
+- Permite cambios al codigo en tiempo de ejecucion (run-time code changes)
+- Como con los otros lenguajes de script provee una API diferente de tu aplicación a los usuarios para que la expandan los usuarios sin tener que exponer partes criticas de tu sistema al publico
