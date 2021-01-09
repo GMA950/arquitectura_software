@@ -24,3 +24,9 @@ Correr programas:
 
 ¿A que requisitos no funcionales corresponde?
 
+- Lua es un lenguaje muy fácil de aprender con una sintaxis sencilla y una estructura de datos muy flexible
+- Lua es extremadamente facil de integrar como un lenguaje de scripts en C/C++
+- A diferencia de C# Lua es más facilemente soportado en cualquier plataforma fuera del ecosistema windows.
+- Se pueden crear facilemente librerias escritas en C para Lua.
+- Lua al ser un lenguaje dinamico posee recoleccion de basura (garbage collection) lo cual le quita trabajo extra al desarrollador
+- Lua es un lenguaje bastante seguro, si hay algo mal o algo falla te lo hará saber inmediatamente, aparte de que se puede implementar un manejador de errores mucho mas facil que en C/C++
