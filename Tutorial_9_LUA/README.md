@@ -2,7 +2,7 @@ Lua es un lenguaje de programacion de origen brasileño, multiparadigma, imperat
 
 Enfocado principalmente en el scripting.
 
-Su sintaxis es simple 
+Su sintaxis es simple y soporta POO
 
 Este lenguaje se tipea dinámicamente, se ejecuta al interpretar bytecode con una máquina virtual basada en registros y tiene administración de memoria automática con recolección de basura incremental. Es ideal para configuración, creación de scripts y prototipado rápido.
 
